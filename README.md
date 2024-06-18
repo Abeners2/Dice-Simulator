@@ -14,13 +14,13 @@ git clone https://github.com/Abeners2/Dice-Simulator
 ## Navegue até o diretório do projeto:
 
 ```bash
-cd simulador-lancamento-dados
+cd Dice-Simulator
 ```
 
 ## Execute o programa:
 
 ```bash
-python main.py
+python simulador_de_dados.py
 ```
 
 ## Uso
