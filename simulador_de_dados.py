@@ -8,7 +8,9 @@ def main():
     print("Simulador de Lançamento de Dados")
     numero_de_lancamentos = int(input("Quantos lançamentos de dados você deseja simular? "))
     
-    resultados = simular_lancamento_dados(numero_de_lancamentos)
+    faces = int(input("Quantas faces o dado deve ter? "))
+    
+    resultados = simular_lancamento_dados(numero_de_lancamentos, faces)
     
     print("\nResultados dos lançamentos:")
     print(formatar_resultados(resultados))
