@@ -1,8 +1,6 @@
-# Arquivo sim_dados.py na raiz do projeto 'simulador_de_dados'
-
-from dados.dados import simular_lancamento_dados  # Importa a função simular_lancamento_dados do módulo dados
-from dados.calculadora import calcular_media  # Importa a função calcular_media do módulo calculadora
-from utils.helper import formatar_resultados  # Importa a função formatar_resultados do módulo helper
+from dados.dados import simular_lancamento_dados 
+from dados.calculadora import calcular_media 
+from utils.helper import formatar_resultados 
 
 def main():
     print("Simulador de Lançamento de Dados")
