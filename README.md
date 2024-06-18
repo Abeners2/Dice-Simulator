@@ -1,32 +1,32 @@
-Simulador de Lançamento de Dados
+# Simulador de Lançamento de Dados
 
-Descrição
+## Descrição
 Este projeto implementa um simulador de lançamento de dados em Python. Ele permite ao usuário simular o lançamento de um dado com um número específico de faces várias vezes, calcular a média dos resultados e exibir os resultados formatados.
 
-Instalação
+## Instalação
 Para executar este programa localmente, siga os passos abaixo:
 
-Clone o repositório:
+## Clone o repositório:
 
 bash
 git clone https://github.com/Abeners2/Dice-Simulator
 
-Navegue até o diretório do projeto:
+## Navegue até o diretório do projeto:
 
 bash
 cd simulador-lancamento-dados
 
-Execute o programa:
+## Execute o programa:
 
 bash
 python main.py
 
-Uso
+## Uso
 Ao executar o programa, você será solicitado a inserir o número de lançamentos desejado e o número de faces do dado. O programa então simula os lançamentos, exibe os resultados formatados e calcula a média dos resultados.
 
-Explicação dos Arquivos
+### Explicação dos Arquivos
 
-main.py
+#### main.py
 O arquivo main.py contém a função principal (main) que inicia o programa de simulação de lançamento de dados. Ele solicita ao usuário o número de lançamentos desejado e o número de faces do dado, simula os lançamentos, exibe os resultados formatados e calcula a média dos resultados.
 
 python
@@ -51,7 +51,7 @@ def main():
 if __name__ == "__main__":
     main()
 
-calculadora.py
+#### calculadora.py
 O arquivo calculadora.py define a função calcular_media, que calcula a média dos valores em uma lista de resultados. Se a lista estiver vazia, a função retorna 0.0.
 
 python
@@ -60,7 +60,7 @@ def calcular_media(resultados):
         return 0.0
     return sum(resultados) / len(resultados)
 
-dados.py
+#### dados.py
 O arquivo dados.py contém a função simular_lancamento_dados, que simula o lançamento de um dado com um número específico de faces várias vezes. Ela utiliza a biblioteca random para gerar números aleatórios entre 1 e o número de faces especificado.
 
 python
@@ -73,7 +73,7 @@ def simular_lancamento_dados(numero_de_lancamentos, faces):
         resultados.append(resultado)
     return resultados
 
-helper.py
+#### helper.py
 O arquivo helper.py define a função formatar_resultados, que formata os resultados dos lançamentos de dados em uma string formatada, numerando cada lançamento.
 
 python
