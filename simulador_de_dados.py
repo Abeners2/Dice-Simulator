@@ -1,14 +1,8 @@
 # Arquivo sim_dados.py na raiz do projeto 'simulador_de_dados'
 
-import random
+from dados.dados import simular_lancamento_dados  # Importa a função simular_lancamento_dados do módulo dados
 from dados.calculadora import calcular_media  # Importa a função calcular_media do módulo calculadora
-
-def simular_lancamento_dados(numero_de_lancamentos):
-    resultados = []
-    for _ in range(numero_de_lancamentos):
-        resultado = random.randint(1, 6)  # Gera um número aleatório entre 1 e 6 (faces de um dado)
-        resultados.append(resultado)
-    return resultados
+from utils.helper import formatar_resultados  # Importa a função formatar_resultados do módulo helper
 
 def main():
     print("Simulador de Lançamento de Dados")
@@ -17,8 +11,7 @@ def main():
     resultados = simular_lancamento_dados(numero_de_lancamentos)
     
     print("\nResultados dos lançamentos:")
-    for i, resultado in enumerate(resultados, start=1):
-        print(f"Lançamento {i}: {resultado}")
+    print(formatar_resultados(resultados))
     
     media = calcular_media(resultados)
     print(f"\nMédia dos resultados: {media:.2f}")
