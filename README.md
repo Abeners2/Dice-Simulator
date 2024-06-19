@@ -28,8 +28,8 @@ Ao executar o programa, você será solicitado a inserir o número de lançament
 
 ### Explicação dos Arquivos
 
-#### main.py
-O arquivo main.py contém a função principal (main) que inicia o programa de simulação de lançamento de dados. Ele solicita ao usuário o número de lançamentos desejado e o número de faces do dado, simula os lançamentos, exibe os resultados formatados e calcula a média dos resultados.
+#### simulador_de_dados.py
+O arquivo simulador_de_dados.py contém a função principal que inicia o programa de simulação de lançamento de dados. Ele solicita ao usuário o número de lançamentos desejado e o número de faces do dado, simula os lançamentos, exibe os resultados formatados e calcula a média dos resultados.
 
 ```python
 from dados.dados import simular_lancamento_dados
